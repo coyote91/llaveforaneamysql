@@ -18,6 +18,7 @@ CREATE TABLE cliente
 			 tipo de dato y ser not null sino que en ambos campos se deberá crear indice y en el momento de crear la llave foranea todas las tablas
              deberan estar vacias.
              por ultimo no se pueden repetir los id o nombre de las llaves foraneas es decir lo que se coloca en el campo   CONSTRAINT fk_ventas
+             para borrar el indice hay que borrar primero la llave foranea 
 */
 
 CREATE TABLE venta
@@ -61,6 +62,8 @@ SHOW INDEX FROM nombrebasededatos.nombretabla
 show index from prueba.venta
 
 #borrar indice creado
+
+# para borrar el indice hay que borrar primero la llave foranea 
 
 ALTER TABLE nombrebasededatos.nombretabla DROP nombre_index;
 
