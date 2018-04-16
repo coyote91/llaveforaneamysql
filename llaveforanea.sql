@@ -19,6 +19,10 @@ CREATE TABLE cliente
              deberan estar vacias.
              por ultimo no se pueden repetir los id o nombre de las llaves foraneas es decir lo que se coloca en el campo   CONSTRAINT fk_ventas
              para borrar el indice hay que borrar primero la llave foranea 
+             parar borrar el indice de la tabla padre toca primero borrar el indice de todas las tablas hijas.
+             algo muy importante es que cuando valla a crear una llave foranea en una tabla hija cuyo campo es el mismo de una tabla padre
+             donde el campo es indice primary key entonces en la tabla hija automaticamente se crea un indice sin necesidad de que halla indice 
+             en el mismo campo en la tabla padre ya que es primary key solo se añade indicie en otro tipo de campo.
 */
 
 CREATE TABLE venta
