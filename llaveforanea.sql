@@ -14,6 +14,11 @@ CREATE TABLE cliente
 
 # segundo creo la tabla venta con la llave foranea a su vez añado el indice al campo foraneo
 
+/* regla 1 : en la tabla padre y en la tabla hijo donde se aplicara la llave foranea no solamente los campos de cada tabla deberan tener el mismo 
+			 tipo de dato y ser not null sino que en ambos campos se deberá crear indice y en el momento de crear la llave foranea todas las tablas
+             deberan estar vacias.
+*/
+
 CREATE TABLE venta
 (
     id_factura INT NOT NULL,
