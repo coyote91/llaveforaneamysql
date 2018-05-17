@@ -71,7 +71,13 @@ show index from prueba.venta
 
 ALTER TABLE nombrebasededatos.nombretabla DROP nombre_index;
 
-#ejemplo
+#borrar index 
+
+DROP INDEX nombre_index ON nombre_tabla
+
+
+
+#borrar un campo de una tabla
 
 ALTER TABLE prueba.venta DROP id_cliente
 
